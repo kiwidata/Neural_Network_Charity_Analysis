@@ -20,6 +20,8 @@ Create a binary classifier that is capable of predicting whether applicants will
 
 2) The target model gave us a 72.4% accuracy rate which did not reach the goal of 75% or higher.
 
+![initial accuracy ](https://user-images.githubusercontent.com/111706055/212575195-d0838705-4255-4d81-af46-8bf7852e8ad4.png)
+
 3) Steps taken to try and increase model performance:
   - Attempt 1 : Remove more columns (unwanted variables) : 'EIN','NAME',"AFFILIATION","USE_CASE". This gave us an accuracy of 65.3% (lower than original)
   - Attempt 2 : Returning to the original model, we reduced the number of bins for APPLICATION_TYPE (putting "Other" lower than 1000 instead of 500) and CLASSIFICATION (putting "Other" lower than 4000 instead of 1880). This gave us an accuracy of 72.4% (on par with the original model)
@@ -28,3 +30,4 @@ Create a binary classifier that is capable of predicting whether applicants will
 ## Summary
 
 The deep learning model is 72.4% accurate (best attempt). This is not ideal since we wanted a 75% accuracy at a minimum. Hence this model needs to have some additional changes. Some recommendations : Increase the number epochs to the training regiments, increase the number neurons to the layers, or increase the number of bins instead of decreasing.
+
