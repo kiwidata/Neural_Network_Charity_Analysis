@@ -25,3 +25,6 @@ Create a binary classifier that is capable of predicting whether applicants will
   - Attempt 2 : Returning to the original model, we reduced the number of bins for APPLICATION_TYPE (putting "Other" lower than 1000 instead of 500) and CLASSIFICATION (putting "Other" lower than 4000 instead of 1880). This gave us an accuracy of 72.4% (on par with the original model)
   - Attepmt 3 : Picking off on attempt 2, we increased the number of hidden layers to 4 instead of 2 (with the following number of neurons for each layer repectively from 1 to 4 : 80,50,30,10). This gave us an accuracy of 72.2% (on par with the original model)
   
+## Summary
+
+The deep learning model is 72.4% accurate (best attempt). This is not ideal since we wanted a 75% accuracy at a minimum. Hence this model needs to have some additional changes. Some recommendations : Increase the number epochs to the training regiments, increase the number neurons to the layers, or increase the number of bins instead of decreasing.
